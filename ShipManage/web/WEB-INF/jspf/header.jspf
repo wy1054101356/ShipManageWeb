@@ -1,0 +1,21 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="container padding-big-top padding-big-bottom border-bottom">
+    <div class="line">
+        <div class="xl12 xs5 xm6 xb7">
+            <button class="button icon-navicon float-right" data-target="#header-demo">
+            </button>
+            <a href="#">
+                <h2><span class="icon-paper-plane"></span> 国内航运.船舶信息管理系统</h2>
+            </a>
+        </div>
+        <div class="xl12 xs7 xm6 xb5 padding-small-top">
+            <ul class="nav navn-menu nav-inline nav-navicon nav-split" id="header-demo">
+                <li class="active"><a href="index.jsp">首页</a> </li>
+                <li><a href="DisplayCompanyServlet">企业信息</a></li>
+                <li><a href="DisplayShipServlet">船舶信息</a> </li>
+                <li><a href="#">港口信息</a> </li>
+                <li><a href="Login.jsp">登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

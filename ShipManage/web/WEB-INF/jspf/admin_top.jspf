@@ -1,0 +1,35 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<!--<a href="<%= request.getContextPath()%>/admin/SystemIndex.jsp">${manager.getCompany().getCompany_name()} (${manager.getManager_Company_id()})</a>--> 
+
+<div class="header bg-blue">
+    <div class="logo margin-big-left fadein-top">
+        <h1 class="icon-cog"> 航运船舶信息系统管理中心</h1></div>
+    <div class="head-r">
+        <h3 >
+            <span class="text-white">
+
+                <c:if test="${managerTypeStr=='供应企业'}">
+                    欢迎.  <a href="<%= request.getContextPath()%>/admin/ProIndex.jsp"> ${manager.getManager_id()}</a> 
+                </c:if>
+                <c:if test="${managerTypeStr=='运输企业'}">
+                    欢迎.  <a href="<%= request.getContextPath()%>/admin/ConIndex.jsp"> ${manager.getManager_id()}</a> 
+                </c:if> 
+                <c:if test="${managerTypeStr=='建造企业'}">
+                    欢迎.  <a href="<%= request.getContextPath()%>/admin/TraIndex.jsp"> ${manager.getManager_id()}</a> 
+                </c:if>  
+                <c:if test="${managerTypeStr=='网站'}">
+                    欢迎.  <a href="<%= request.getContextPath()%>/admin/SystemIndex.jsp"> ${manager.getManager_id()}</a> 
+                </c:if>  
+                <c:if test="${managerTypeStr=='政府'}">
+                    欢迎.  <a href="<%= request.getContextPath()%>/admin/GovIndex.jsp"> ${manager.getManager_id()}</a> 
+                </c:if>  
+                | ${managerTypeStr}${manager.getManager_admin_type()}
+            </span>
+            <a class="button button-little bg-green" href="<%= request.getContextPath()%>/Home.jsp" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;
+            <a class="button button-little bg-red" href="<%= request.getContextPath()%>/Admin/AdminLogout"><span class="icon-power-off"></span> 退出登录</a> 
+        </h3>
+    </div>
+
+</div>

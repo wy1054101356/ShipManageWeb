@@ -1,0 +1,89 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="admin" style="font-size: 15px">
+    <div class="line-big">
+        <div class="xm3">
+            <div class="panel border-back">
+                <div class="panel-body text-center ">
+                    <h1>${ manager.getCompany().getCompany_name() }${manager.getManager_admin_type()} </h1>
+                </div>
+                <div class="panel-foot bg-back border-back">用 户 名 称: ${ manager.getManager_id() }</div>
+                <div class="panel-foot bg-back border-back">用 户 职 责: ${ manager.getManager_admin_type() }</div>
+                <div class="panel-foot bg-back border-back">公 司 名 称: ${ manager.getCompany().getCompany_name() }</div>
+                <div class="panel-foot bg-back border-back">公 司 编 号: ${ manager.getCompany().getCompany_id() }</div>
+                <div class="panel-foot bg-back border-back">公 司 类 型: ${ manager.getCompany().getCompany_type() }</div>
+                <div class="panel-foot bg-back border-back">公 司 电 话: ${ manager.getCompany().getCompany_tel() }</div>
+                <div class="panel-foot bg-back border-back">公 司 地 址: ${ manager.getCompany().getCompany_address() }</div>
+
+            </div>
+            <br />
+            <div class="panel">
+                <div class="panel-head"><strong>网站数据统计</strong></div>
+                <ul class="list-group" style="font-size: 15px">
+                    <li><span class="float-right badge bg-blue">${proCompanyNum} 家</span><span class="icon-user"></span> 已注册供应企业数</li>
+                    <li><span class="float-right badge bg-blue">${traCompanyNum} 家</span><span class="icon-user"></span> 已注册运输企业数</li>
+                    <li><span class="float-right badge bg-blue">${conCompanyNum} 家</span><span class="icon-user"></span> 已注册建造企业数</li>
+                    <li><span class="float-right badge bg-blue">${shipsSize} 艘</span><span class="icon-file-text"></span> 在运营船舶数</li>
+                </ul>
+            </div>
+            <br />
+        </div>
+        <div class="xm9">
+            <div class="alert alert-yellow"><span class="close"></span><strong>注意：</strong>您有5条未读信息，
+                <a href="#">点击查看</a>。</div>
+            <div class="panel">
+                <div class="panel-head"><strong>开发人员信息</strong></div>
+                <table class="table">
+                    <tr>
+                        <td width="110" align="right">项目题目：</td>
+                        <td>航运船舶信息管理系统</td>
+                    </tr>
+                    <tr>
+                        <td align="right">开发人员：</td>
+                        <td>软件161 王洋(负责人) 曹庆魁 施婉君</td>
+                    </tr>
+                    <tr>
+                        <td align="right">开发日期：</td>
+                        <td>2019/6/24 - 2019/7/6</td>
+                    </tr>
+                    <tr>
+                        <td align="right">指导老师：</td>
+                        <td>付勇智老师 齐心老师 彭彬老师 </td>
+                    </tr>     
+
+                </table>
+            </div>
+            <div class="panel">
+                <div class="panel-head"><strong>系统信息</strong></div>
+                <table class="table">
+                    <tr>
+                        <td width="110" align="right">操作系统：</td>
+                        <td>Windows 10 Ver.1903</td>
+                    </tr>
+                    <tr>
+                        <td align="right">Web服务器：</td>
+                        <td>Apache Tomcat</td>
+                    </tr>
+                    <tr>
+                        <td align="right">程序语言：</td>
+                        <td>JavaWeb</td>
+                    </tr>
+                    <tr>
+                        <td align="right">数 据 库：</td>
+                        <td>Oracle 11g</td>
+                    </tr>    
+                    <tr>
+                        <td align="right">版 本 号：</td>
+                        <td>4.2.2</td>
+                    </tr>  
+                    <tr>
+                        <td align="right">外网访问：</td>
+                        <td><a href="http://hsk1054101356.qicp.io:52518/ShipManage/">http://hsk1054101356.qicp.io:52518/ShipManage/</a></td>
+                    </tr>   
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

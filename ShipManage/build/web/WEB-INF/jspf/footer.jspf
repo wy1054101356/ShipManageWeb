@@ -1,0 +1,21 @@
+<%@ page pageEncoding="UTF-8" %>
+<!--首页面尾部开始-->
+<div class="container" style="">
+    <div class="border-top padding-top">
+        <div class="text-center">
+
+        </div>
+        <div class="text-center height-big">
+            湖北汽车工业学院 丨 电气与信息工程学院
+        </div>
+        <div class="text-center height-big">
+            软件161 丨 <a href="http://www.sizhisheng.icoc.bz">@王洋</a> 曹庆魁 施婉君
+        </div>
+        <div class="text-center height-big">
+            © 2019.Company name All rights reserved HUATER 
+        </div>
+    </div>
+</div>
+<!--首页面尾部结束-->
+
+

@@ -1,0 +1,27 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="top-bar_w3agileits">
+
+    <div class="header-nav">
+        <div class="inner-nav_wthree_agileits">
+            <nav class="navbar navbar-default">
+                <div class="col-md-5 logo">
+                    <h1 ><a class="icon-anchor" href="Home.jsp"> 航运船舶信息管理系统</a></h1>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                    <nav style="float:right">
+                        <ul class="nav navbar-nav" >
+                            <li><a style="font-size: 16px;"  class="icon-home" href="Home.jsp"> 首页</a></li>
+                            <li><a style="font-size: 16px;"  class="icon-th-list" href="DisplayMessageS"> 航运资讯</a></li>
+                            <li><a style="font-size: 16px;"  class="icon-university" href="DisplayCompanyServlet"> 企业信息</a></li>
+                            <li><a style="font-size: 16px;"  class="icon-anchor" href="DisplayShipServlet" > 船舶信息</a></li>
+                            <li><a style="font-size: 16px;"  class="icon-user" href="Login.jsp"> 登录</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+</div>
